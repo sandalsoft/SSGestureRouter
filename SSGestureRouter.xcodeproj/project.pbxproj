@@ -10,6 +10,9 @@
 		07A5709D17347D2600FF8692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5709C17347D2600FF8692 /* Foundation.framework */; };
 		07A570A217347D2600FF8692 /* SSGestureRouter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07A570A117347D2600FF8692 /* SSGestureRouter.h */; };
 		07A570A417347D2600FF8692 /* SSGestureRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570A317347D2600FF8692 /* SSGestureRouter.m */; };
+		07A570BD1734860A00FF8692 /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BC1734860A00FF8692 /* GestureView.m */; };
+		07A570C01734B09A00FF8692 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BF1734B09A00FF8692 /* Stroke.m */; };
+		07A570C317352F8C00FF8692 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A570C217352F8C00FF8692 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,18 +34,25 @@
 		07A570A017347D2600FF8692 /* SSGestureRouter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSGestureRouter-Prefix.pch"; sourceTree = "<group>"; };
 		07A570A117347D2600FF8692 /* SSGestureRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGestureRouter.h; sourceTree = "<group>"; };
 		07A570A317347D2600FF8692 /* SSGestureRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGestureRouter.m; sourceTree = "<group>"; };
-		07A570AB17347E4D00FF8692 /* DollarDefaultGestures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarDefaultGestures.h; sourceTree = "<group>"; };
-		07A570AC17347E4D00FF8692 /* DollarDefaultGestures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarDefaultGestures.m; sourceTree = "<group>"; };
-		07A570AD17347E4D00FF8692 /* DollarP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarP.h; sourceTree = "<group>"; };
-		07A570AE17347E4D00FF8692 /* DollarP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarP.m; sourceTree = "<group>"; };
-		07A570AF17347E4D00FF8692 /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPGestureRecognizer.h; sourceTree = "<group>"; };
-		07A570B017347E4D00FF8692 /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPGestureRecognizer.m; sourceTree = "<group>"; };
-		07A570B117347E4D00FF8692 /* DollarPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPoint.h; sourceTree = "<group>"; };
-		07A570B217347E4D00FF8692 /* DollarPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPoint.m; sourceTree = "<group>"; };
-		07A570B317347E4D00FF8692 /* DollarPointCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarPointCloud.h; sourceTree = "<group>"; };
-		07A570B417347E4D00FF8692 /* DollarPointCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
-		07A570B517347E4D00FF8692 /* DollarResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
-		07A570B617347E4D00FF8692 /* DollarResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+		07A570AB17347E4D00FF8692 /* DollarDefaultGestures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarDefaultGestures.h; path = DollarP/DollarDefaultGestures.h; sourceTree = "<group>"; };
+		07A570AC17347E4D00FF8692 /* DollarDefaultGestures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarDefaultGestures.m; path = DollarP/DollarDefaultGestures.m; sourceTree = "<group>"; };
+		07A570AD17347E4D00FF8692 /* DollarP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarP.h; path = DollarP/DollarP.h; sourceTree = "<group>"; };
+		07A570AE17347E4D00FF8692 /* DollarP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarP.m; path = DollarP/DollarP.m; sourceTree = "<group>"; };
+		07A570AF17347E4D00FF8692 /* DollarPGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarPGestureRecognizer.h; path = DollarP/DollarPGestureRecognizer.h; sourceTree = "<group>"; };
+		07A570B017347E4D00FF8692 /* DollarPGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarPGestureRecognizer.m; path = DollarP/DollarPGestureRecognizer.m; sourceTree = "<group>"; };
+		07A570B117347E4D00FF8692 /* DollarPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarPoint.h; path = DollarP/DollarPoint.h; sourceTree = "<group>"; };
+		07A570B217347E4D00FF8692 /* DollarPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarPoint.m; path = DollarP/DollarPoint.m; sourceTree = "<group>"; };
+		07A570B317347E4D00FF8692 /* DollarPointCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarPointCloud.h; path = DollarP/DollarPointCloud.h; sourceTree = "<group>"; };
+		07A570B417347E4D00FF8692 /* DollarPointCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarPointCloud.m; path = DollarP/DollarPointCloud.m; sourceTree = "<group>"; };
+		07A570B517347E4D00FF8692 /* DollarResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DollarResult.h; path = DollarP/DollarResult.h; sourceTree = "<group>"; };
+		07A570B617347E4D00FF8692 /* DollarResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DollarResult.m; path = DollarP/DollarResult.m; sourceTree = "<group>"; };
+		07A570B71734819D00FF8692 /* GestureViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPhone.xib; sourceTree = "<group>"; };
+		07A570B8173481B200FF8692 /* GestureViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPad.xib; sourceTree = "<group>"; };
+		07A570BB1734860A00FF8692 /* GestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
+		07A570BC1734860A00FF8692 /* GestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
+		07A570BE1734B09A00FF8692 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		07A570BF1734B09A00FF8692 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		07A570C217352F8C00FF8692 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A570C317352F8C00FF8692 /* QuartzCore.framework in Frameworks */,
 				07A5709D17347D2600FF8692 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +71,7 @@
 		07A5709017347D2600FF8692 = {
 			isa = PBXGroup;
 			children = (
+				07A570C217352F8C00FF8692 /* QuartzCore.framework */,
 				07A5709E17347D2600FF8692 /* SSGestureRouter */,
 				07A5709B17347D2600FF8692 /* Frameworks */,
 				07A5709A17347D2600FF8692 /* Products */,
@@ -85,9 +97,15 @@
 		07A5709E17347D2600FF8692 /* SSGestureRouter */ = {
 			isa = PBXGroup;
 			children = (
-				07A570AA17347E4D00FF8692 /* DollarP */,
+				07A570C11734B28C00FF8692 /* DollarP */,
 				07A570A117347D2600FF8692 /* SSGestureRouter.h */,
 				07A570A317347D2600FF8692 /* SSGestureRouter.m */,
+				07A570B71734819D00FF8692 /* GestureViewiPhone.xib */,
+				07A570B8173481B200FF8692 /* GestureViewiPad.xib */,
+				07A570BB1734860A00FF8692 /* GestureView.h */,
+				07A570BC1734860A00FF8692 /* GestureView.m */,
+				07A570BE1734B09A00FF8692 /* Stroke.h */,
+				07A570BF1734B09A00FF8692 /* Stroke.m */,
 				07A5709F17347D2600FF8692 /* Supporting Files */,
 			);
 			path = SSGestureRouter;
@@ -101,7 +119,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		07A570AA17347E4D00FF8692 /* DollarP */ = {
+		07A570C11734B28C00FF8692 /* DollarP */ = {
 			isa = PBXGroup;
 			children = (
 				07A570AB17347E4D00FF8692 /* DollarDefaultGestures.h */,
@@ -117,7 +135,7 @@
 				07A570B517347E4D00FF8692 /* DollarResult.h */,
 				07A570B617347E4D00FF8692 /* DollarResult.m */,
 			);
-			path = DollarP;
+			name = DollarP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A570A417347D2600FF8692 /* SSGestureRouter.m in Sources */,
+				07A570BD1734860A00FF8692 /* GestureView.m in Sources */,
+				07A570C01734B09A00FF8692 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +294,7 @@
 				07A570A917347D2600FF8692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -25,7 +25,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    
+    timer = nil;
     for (UITouch *touch in touches) {
         strokeId++;
         NSValue *key = [NSValue valueWithNonretainedObject:touch];
@@ -35,7 +35,7 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesMoved:touches withEvent:event];
-    
+    timer = nil;
     if ([self state] == UIGestureRecognizerStateFailed) {
         return;
     }
@@ -53,11 +53,23 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    //    NSLog(@"touch end starting timer");
+    //    NSDictionary *touchInfo = @{@"touches":touches,@"event":event};
+    //    timer = [NSTimer scheduledTimerWithTimeInterval:1.5f target:self selector:@selector(gestureComplete) userInfo:touchInfo repeats:NO];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:GESTURE_TOUCH_END object:self];
     [super touchesEnded:touches withEvent:event];
+}
+
+- (void)gestureComplete:(NSTimer *) myTimer {
+    NSDictionary *userInfo = [[NSDictionary alloc] init];
+    userInfo = (NSDictionary *) myTimer.userInfo;
+    [super touchesEnded:[userInfo objectForKey:@"touches"] withEvent:[userInfo objectForKey:@"event"]];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesCancelled:touches withEvent:event];
+    timer = nil;
     
     [self setState:UIGestureRecognizerStateFailed];
 }
@@ -86,12 +98,6 @@
 
 - (void)addGestureWithName:(NSString *)name {
     if ([points count] > 0) {
-
-        NSString *pointCodeLine = @"";
-        for (DollarPoint *p in points) {
-            pointCodeLine = [NSString stringWithFormat:@"%@\nMakePoint(%.0f, %.0f, %@),", pointCodeLine, ceil(p.x), ceil(p.y), p.id];
-        }
-        NSLog(@"\n  pointClouds[] = MakePointCloud(@\"%@\", @[\n %@\n]);", name, pointCodeLine);
         [dollarP addGesture:name points:points];
     }
 }
