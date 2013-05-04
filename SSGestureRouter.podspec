@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
   s.name         = 'SSGestureRouter'
   s.version      = '0.0.1'
   s.license      = 'MIT'
-  s.homepage     = 'https://github.com/sandalsoft/SSXGestureRouter'
-  s.authors      = { 'Eric Nelson' => '@sandalsoft' }
+  s.homepage     = 'https://github.com/sandalsoft/SSGestureRouter'
+  s.authors      = { 'Eric Nelson' => 'eric@sandalsoft' }
   s.summary      = 'Objective-C library to read complex touch gestures and perform an action. '
   s.source       =  {
                       :git => 'https://github.com/sandalsoft/SSGestureRouter.git', 

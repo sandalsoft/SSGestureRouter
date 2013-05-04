@@ -8,7 +8,6 @@
 
 #import "SSGestureRouter.h"
 #import <QuartzCore/QuartzCore.h>
-#import "DollarPGestureRecognizer.h"
 #import "DollarDefaultGestures.h"
 
 static NSString * const GestureViewiPhoneXib =  @"GestureViewiPhoneXib";
