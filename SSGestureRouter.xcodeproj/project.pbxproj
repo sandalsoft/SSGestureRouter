@@ -13,6 +13,12 @@
 		07A570BD1734860A00FF8692 /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BC1734860A00FF8692 /* GestureView.m */; };
 		07A570C01734B09A00FF8692 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A570BF1734B09A00FF8692 /* Stroke.m */; };
 		07A570C317352F8C00FF8692 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A570C217352F8C00FF8692 /* QuartzCore.framework */; };
+		07A5710E173548FB00FF8692 /* DollarDefaultGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710217353EF300FF8692 /* DollarDefaultGestures.m */; };
+		07A5710F173548FB00FF8692 /* DollarP.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710417353EF500FF8692 /* DollarP.m */; };
+		07A57110173548FB00FF8692 /* DollarPGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710617353EF900FF8692 /* DollarPGestureRecognizer.m */; };
+		07A57111173548FB00FF8692 /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710817353EFF00FF8692 /* DollarPoint.m */; };
+		07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710A17353F0700FF8692 /* DollarPointCloud.m */; };
+		07A57113173548FB00FF8692 /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710C17353F1100FF8692 /* DollarResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -189,6 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A5710E173548FB00FF8692 /* DollarDefaultGestures.m in Sources */,
+				07A5710F173548FB00FF8692 /* DollarP.m in Sources */,
+				07A57110173548FB00FF8692 /* DollarPGestureRecognizer.m in Sources */,
+				07A57111173548FB00FF8692 /* DollarPoint.m in Sources */,
+				07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */,
+				07A57113173548FB00FF8692 /* DollarResult.m in Sources */,
 				07A570A417347D2600FF8692 /* SSGestureRouter.m in Sources */,
 				07A570BD1734860A00FF8692 /* GestureView.m in Sources */,
 				07A570C01734B09A00FF8692 /* Stroke.m in Sources */,

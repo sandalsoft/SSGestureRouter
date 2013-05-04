@@ -1,5 +1,6 @@
 #import "DollarPGestureRecognizer.h"
 #import "DollarPoint.h"
+#import <UIKit/UIKit.h>
 
 @implementation DollarPGestureRecognizer
 
@@ -25,7 +26,6 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    timer = nil;
     for (UITouch *touch in touches) {
         strokeId++;
         NSValue *key = [NSValue valueWithNonretainedObject:touch];
@@ -35,7 +35,6 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesMoved:touches withEvent:event];
-    timer = nil;
     if ([self state] == UIGestureRecognizerStateFailed) {
         return;
     }
@@ -61,15 +60,9 @@
     [super touchesEnded:touches withEvent:event];
 }
 
-- (void)gestureComplete:(NSTimer *) myTimer {
-    NSDictionary *userInfo = [[NSDictionary alloc] init];
-    userInfo = (NSDictionary *) myTimer.userInfo;
-    [super touchesEnded:[userInfo objectForKey:@"touches"] withEvent:[userInfo objectForKey:@"event"]];
-}
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesCancelled:touches withEvent:event];
-    timer = nil;
     
     [self setState:UIGestureRecognizerStateFailed];
 }
