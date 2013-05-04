@@ -71,7 +71,6 @@
 		07A5709017347D2600FF8692 = {
 			isa = PBXGroup;
 			children = (
-				07A570C217352F8C00FF8692 /* QuartzCore.framework */,
 				07A5709E17347D2600FF8692 /* SSGestureRouter */,
 				07A5709B17347D2600FF8692 /* Frameworks */,
 				07A5709A17347D2600FF8692 /* Products */,
@@ -89,6 +88,7 @@
 		07A5709B17347D2600FF8692 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07A570C217352F8C00FF8692 /* QuartzCore.framework */,
 				07A5709C17347D2600FF8692 /* Foundation.framework */,
 			);
 			name = Frameworks;
