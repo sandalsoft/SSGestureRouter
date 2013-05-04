@@ -10,8 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "DollarDefaultGestures.h"
 
-static NSString * const GestureViewiPhoneXib =  @"GestureViewiPhoneXib";
-static NSString * const GestureViewiPadXib =  @"GestureViewiPadXib";
+
 
 @implementation SSGestureRouter
 

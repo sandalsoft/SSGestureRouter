@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Common.h"
 #import "GestureView.h"
 #import "DollarPGestureRecognizer.h"
 

@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "Common.h"
 
 @interface DollarResult : NSObject
 

@@ -19,6 +19,7 @@
 		07A57111173548FB00FF8692 /* DollarPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710817353EFF00FF8692 /* DollarPoint.m */; };
 		07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710A17353F0700FF8692 /* DollarPointCloud.m */; };
 		07A57113173548FB00FF8692 /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710C17353F1100FF8692 /* DollarResult.m */; };
+		07A5711617354D7E00FF8692 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5711517354D7E00FF8692 /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		07A5710A17353F0700FF8692 /* DollarPointCloud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarPointCloud.m; sourceTree = "<group>"; };
 		07A5710B17353F0D00FF8692 /* DollarResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DollarResult.h; sourceTree = "<group>"; };
 		07A5710C17353F1100FF8692 /* DollarResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
+		07A5711417354D7E00FF8692 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		07A5711517354D7E00FF8692 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				07A5710D17353F3400FF8692 /* DollarP */,
+				07A5711417354D7E00FF8692 /* Common.h */,
+				07A5711517354D7E00FF8692 /* Common.m */,
 				07A570A117347D2600FF8692 /* SSGestureRouter.h */,
 				07A570A317347D2600FF8692 /* SSGestureRouter.m */,
 				07A570B71734819D00FF8692 /* GestureViewiPhone.xib */,
@@ -204,6 +209,7 @@
 				07A570A417347D2600FF8692 /* SSGestureRouter.m in Sources */,
 				07A570BD1734860A00FF8692 /* GestureView.m in Sources */,
 				07A570C01734B09A00FF8692 /* Stroke.m in Sources */,
+				07A5711617354D7E00FF8692 /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

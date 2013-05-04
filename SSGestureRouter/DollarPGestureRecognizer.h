@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "Common.h"
 #import <UIKit/UIKit.h>
 #import <UIKit/UIGestureRecognizerSubclass.h>
 #import "DollarP.h"

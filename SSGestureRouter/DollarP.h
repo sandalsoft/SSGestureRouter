@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "DollarResult.h"
 #import "DollarPoint.h"
+#import "Common.h"
 
 extern int const DollarPNumPoints;
 
