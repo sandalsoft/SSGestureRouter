@@ -45,39 +45,43 @@
     return self;
 }
 
-- (void) gestureTouchesDone:(NSNotification *)gestureNotification {
+- (void)startGestureRouter:(UIView *)callingView {
+    //    NSLog(@"in router with my view: %@", callingView);
+    
+    self.gestureView  = [[[NSBundle mainBundle] loadNibNamed:GestureViewiPhoneXib owner:self options:nil] lastObject];
+    
+    [self.gestureView addGestureRecognizer:self.dollarPGestureRecognizer];
+    self.gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
+    [self addBorder:callingView withBorderColor:self.viewBorderOutlineColor withTickness:self.viewBorderOutlineThickness];
+    [callingView addSubview:self.gestureView];
+}
+
     // Process the touchesfrom the gesture view
+- (void) gestureTouchesDone:(NSNotification *)gestureNotification {
     [self.dollarPGestureRecognizer recognize];
     [self.gestureView removeFromSuperview];
 }
 
 - (void)gestureIsRecognized:(DollarPGestureRecognizer *)sender {
+    [self removeBorder:self.sendingView];
     DollarResult *result = [sender result];
     //    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
     NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};
     [[self delegate]  gestureRecognitionDidFinish:gestureDict];
 }
 
+
+
+
+
+
 - (void)activateGesture:(UILongPressGestureRecognizer *)sender {
-     if(sender.state == UIGestureRecognizerStateEnded)
+    if(sender.state == UIGestureRecognizerStateEnded)
     {
         [self startGestureRouter:self.sendingView];
     }
 }
 
-
-- (void)startGestureRouter:(UIView *)callingView {
-    //    NSLog(@"in router with my view: %@", callingView);
-
-    self.gestureView  = [[[NSBundle mainBundle] loadNibNamed:GestureViewiPhoneXib owner:self options:nil] lastObject];
-
-    [self.gestureView addGestureRecognizer:self.dollarPGestureRecognizer];
-    self.gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
-    
-    [callingView addSubview:self.gestureView];
-    
-    
-}
 
 - (UIImage *)takeScreenShot:(UIView *)view {
     CGRect rect = [view bounds];
