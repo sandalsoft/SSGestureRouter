@@ -46,7 +46,7 @@
     [self.gestureView removeFromSuperview];
 }
 
-- (void)gestureRecognized:(DollarPGestureRecognizer *)sender {
+- (void)gestureIsRecognized:(DollarPGestureRecognizer *)sender {
     DollarResult *result = [sender result];
     //    NSLog(@"Name: %@\nScore: %.2f", [result name], [result score]);
     NSDictionary *gestureDict = @{@"gestureName":[result name],@"gestureScore":[NSNumber numberWithDouble:[result score]]};
@@ -65,7 +65,7 @@
     //    NSLog(@"in router with my view: %@", callingView);
 
     self.gestureView  = [[[NSBundle mainBundle] loadNibNamed:GestureViewiPhoneXib owner:self options:nil] lastObject];
-    self.gestureView.showStroke = self.showStroke;
+
     [self.gestureView addGestureRecognizer:self.dollarPGestureRecognizer];
     self.gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
     
