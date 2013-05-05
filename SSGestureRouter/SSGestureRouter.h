@@ -24,13 +24,18 @@
 @property (strong, nonatomic) IBOutlet GestureView *gestureView;
 @property (strong, nonatomic) DollarPGestureRecognizer *dollarPGestureRecognizer;
 @property (strong, nonatomic) UIView *sendingView;
-@property BOOL showStroke;
 @property BOOL useLongTouchGestureAactivation;
 @property float longTouchActivationDuration;
-
+@property BOOL showStroke;
+@property BOOL showViewBorderOutline;
+@property (weak, nonatomic) UIColor *viewBorderOutlineColor;
+@property float viewBorderOutlineThickness;
 @property (nonatomic, assign) id delegate;
+
+
 
 - (id)initWithCallingView:(UIView *)callingView;
 - (void)startGestureRouter:(UIView *)callingView;
+
 
 @end

@@ -25,6 +25,11 @@
                                                    object:nil];
         
         self.sendingView = callingView;
+        
+        self.showViewBorderOutline = NO;
+        self.viewBorderOutlineColor = [UIColor redColor];
+        self.viewBorderOutlineThickness = 3.0f;
+        
         UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(activateGesture:)];
         
         if (self.useLongTouchGestureAactivation) {
@@ -82,6 +87,16 @@
     UIImage *screenShot = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return screenShot;
+}
+
+- (void)addBorder:(UIView *) callingView withBorderColor:(UIColor *)borderColor withTickness:(float)thickness {
+    callingView.layer.borderColor = borderColor.CGColor;
+    callingView.layer.borderWidth = thickness;
+}
+
+- (void)removeBorder:(UIView *) callingView {
+    callingView.layer.borderColor = nil;
+    callingView.layer.borderWidth = 0;
 }
 
 
