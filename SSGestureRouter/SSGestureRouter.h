@@ -30,4 +30,7 @@
 
 @property (nonatomic, assign) id delegate;
 
+- (id)initWithCallingView:(UIView *)callingView;
+- (void)startGestureRouter:(UIView *)callingView;
+
 @end

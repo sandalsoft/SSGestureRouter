@@ -20,6 +20,8 @@
 		07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710A17353F0700FF8692 /* DollarPointCloud.m */; };
 		07A57113173548FB00FF8692 /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710C17353F1100FF8692 /* DollarResult.m */; };
 		07A5711617354D7E00FF8692 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5711517354D7E00FF8692 /* Common.m */; };
+		07A57122173685AC00FF8692 /* GestureViewiPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A57120173685AC00FF8692 /* GestureViewiPad.xib */; };
+		07A57123173685AC00FF8692 /* GestureViewiPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A57121173685AC00FF8692 /* GestureViewiPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +43,6 @@
 		07A570A017347D2600FF8692 /* SSGestureRouter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSGestureRouter-Prefix.pch"; sourceTree = "<group>"; };
 		07A570A117347D2600FF8692 /* SSGestureRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSGestureRouter.h; sourceTree = "<group>"; };
 		07A570A317347D2600FF8692 /* SSGestureRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGestureRouter.m; sourceTree = "<group>"; };
-		07A570B71734819D00FF8692 /* GestureViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPhone.xib; sourceTree = "<group>"; };
-		07A570B8173481B200FF8692 /* GestureViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPad.xib; sourceTree = "<group>"; };
 		07A570BB1734860A00FF8692 /* GestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
 		07A570BC1734860A00FF8692 /* GestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
 		07A570BE1734B09A00FF8692 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		07A5710C17353F1100FF8692 /* DollarResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DollarResult.m; sourceTree = "<group>"; };
 		07A5711417354D7E00FF8692 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		07A5711517354D7E00FF8692 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		07A57120173685AC00FF8692 /* GestureViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPad.xib; sourceTree = "<group>"; };
+		07A57121173685AC00FF8692 /* GestureViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GestureViewiPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +113,12 @@
 				07A5711517354D7E00FF8692 /* Common.m */,
 				07A570A117347D2600FF8692 /* SSGestureRouter.h */,
 				07A570A317347D2600FF8692 /* SSGestureRouter.m */,
-				07A570B71734819D00FF8692 /* GestureViewiPhone.xib */,
-				07A570B8173481B200FF8692 /* GestureViewiPad.xib */,
 				07A570BB1734860A00FF8692 /* GestureView.h */,
 				07A570BC1734860A00FF8692 /* GestureView.m */,
 				07A570BE1734B09A00FF8692 /* Stroke.h */,
 				07A570BF1734B09A00FF8692 /* Stroke.m */,
+				07A57120173685AC00FF8692 /* GestureViewiPad.xib */,
+				07A57121173685AC00FF8692 /* GestureViewiPhone.xib */,
 				07A5709F17347D2600FF8692 /* Supporting Files */,
 			);
 			path = SSGestureRouter;
@@ -159,6 +161,7 @@
 				07A5709517347D2600FF8692 /* Sources */,
 				07A5709617347D2600FF8692 /* Frameworks */,
 				07A5709717347D2600FF8692 /* CopyFiles */,
+				07A5711D1736831900FF8692 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +197,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A5711D1736831900FF8692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A57122173685AC00FF8692 /* GestureViewiPad.xib in Resources */,
+				07A57123173685AC00FF8692 /* GestureViewiPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07A5709517347D2600FF8692 /* Sources */ = {

@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
                       :git => 'https://github.com/sandalsoft/SSGestureRouter.git', 
                       :tag=> s.version.to_s
 					}  
-  s.source_files = 'SSGestureRouter/*.{h,m}'
+  s.source_files = 'SSGestureRouter/*.{h,m,xib}'
+  s.resources = 'SSGestureRouter/*.xib'
   s.framework    = 'QuartzCore'
   s.requires_arc = true
 end

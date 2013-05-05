@@ -10,8 +10,8 @@
 
 #define GESTURE_TOUCH_END @"DollarPGestureTouchesEnd"
 
-static NSString * const GestureViewiPhoneXib =  @"GestureViewiPhoneXib";
-static NSString * const GestureViewiPadXib =  @"GestureViewiPadXib";
+static NSString * const GestureViewiPhoneXib =  @"GestureViewiPhone";
+static NSString * const GestureViewiPadXib =  @"GestureViewiPad";
 
 @interface Common : NSObject
 
