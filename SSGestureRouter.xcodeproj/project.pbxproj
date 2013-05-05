@@ -20,8 +20,6 @@
 		07A57112173548FB00FF8692 /* DollarPointCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710A17353F0700FF8692 /* DollarPointCloud.m */; };
 		07A57113173548FB00FF8692 /* DollarResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5710C17353F1100FF8692 /* DollarResult.m */; };
 		07A5711617354D7E00FF8692 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5711517354D7E00FF8692 /* Common.m */; };
-		07A57122173685AC00FF8692 /* GestureViewiPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A57120173685AC00FF8692 /* GestureViewiPad.xib */; };
-		07A57123173685AC00FF8692 /* GestureViewiPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A57121173685AC00FF8692 /* GestureViewiPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -203,8 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A57122173685AC00FF8692 /* GestureViewiPad.xib in Resources */,
-				07A57123173685AC00FF8692 /* GestureViewiPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
