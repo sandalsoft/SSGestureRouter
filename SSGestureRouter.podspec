@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.name         = 'SSGestureRouter'
-  s.version      = '0.1.0'
+  s.version      = '0.1.1'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/sandalsoft/SSGestureRouter'
   s.authors      = { 'Eric Nelson' => 'eric@sandalsoft' }
