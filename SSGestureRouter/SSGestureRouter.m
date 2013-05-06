@@ -53,6 +53,9 @@
     [self.gestureView addGestureRecognizer:self.dollarPGestureRecognizer];
     self.gestureView.backgroundColor = [UIColor colorWithPatternImage:[self takeScreenShot:callingView]];
     [self addBorder:callingView withBorderColor:self.viewBorderOutlineColor withTickness:self.viewBorderOutlineThickness];
+//    self.gestureView.bounds = CGRectMake(callingView.bounds.origin.x, callingView.bounds.origin.y, callingView.bounds.size.width, callingView.bounds.size.height);
+//    NSLog(@"%f x %f", self.gestureView.bounds.size.width, self.gestureView.bounds.size.height);
+
     [callingView addSubview:self.gestureView];
 }
 
